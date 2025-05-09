@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <title>To-Do</title>
+</head>
+<body>
+    <div class="container border my-2 ">
+        <h1 class="text-center">To-Do</h1>
+        <div class="row g-1">
+            <div class="col-12 col-md-8">
+                <input type="text" id="tarea" class=" form-control w-100 border-2" placeholder="Escribe una tarea para agregar a tu lista" autocomplete="off">
+                
+            </div>
+            <div class="col-12 col-md-4">
+                <button class="btn btn-primary w-100" id="botonAgregar">Agregar tarea</button>
+            </div>
+        </div>
+        <div class="container mt-1">
+            <h2>Tareas:</h2>
+            <ul class="lista">
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./To-Do.js"></script>
+</body>
+</html>
