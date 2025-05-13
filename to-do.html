@@ -9,7 +9,20 @@
 <body>
     <div class="container border my-2 ">
         <h1 class="text-center">To-Do</h1>
-        <div class="row g-1">
+        <div class="row my-2 flex-wrap g-2"><!--ARRIBA-->
+            <div class="col-12 col-md-6"><!--BUSCADOR-->
+                <input type="text" class="form-control" placeholder="Buscar" id="buscador" autocomplete="off">
+            </div> 
+            <div class="col-12 col-md-6"><!--SELECT-->
+                <select class="form-select" aria-label="Default select example" id="filtro">
+                    <option selected hidden>Filtrar</option>
+                    <option value="Todos">Todos</option>
+                    <option value="Completados">Completados</option>
+                    <option value="Pendiente">Pendientes</option>
+                  </select>
+            </div>           
+        </div>
+        <div class="row g-1" id="agregar"><!--AGREGAR-->
             <div class="col-12 col-md-8">
                 <input type="text" id="tarea" class=" form-control w-100 border-2" placeholder="Escribe una tarea para agregar a tu lista" autocomplete="off">
                 
@@ -18,9 +31,9 @@
                 <button class="btn btn-primary w-100" id="botonAgregar">Agregar tarea</button>
             </div>
         </div>
-        <div class="container mt-1">
+        <div class="container mt-1"><!--SE INSERTAN LOS li-->
             <h2>Tareas:</h2>
-            <ul class="lista">
+            <ul class="lista"><!--LISTA-->
             </ul>
         </div>
     </div>
